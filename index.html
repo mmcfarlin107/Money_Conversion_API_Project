@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </head>
-<body>
 
+<body>
+      <div class="container">
+  <header>
+      <h1 class="text-center large-text"> Currency Conversions</h1>
+      <h2 class="text-center medium-text"> Convert some popular currencies amongst each other</h2>
+      <p class="text-center" id="disclaimer"> ***While these numbers are accurate as of October 2017, please do not use these values for any finanical decisions. Seek a more reliable source... This is just for practice!
+      </p>
+  </header>
+  <main>
+    <section>
+        <div class="col-xs-12 col-sm-6" id="convert-section">
+        <p class="inline-block"> Amount: </p>
+        <input class="inline-block input" type="number" placeholder="1">
+<select>
+  <option class="options"> US Dollar (USD) </option class="options">
+  <option class="options"> Euro (EUR) </option class="options">
+  <option class="options"> Canadian Dollar (CAD) </option class="options">
+  <option class="options"> Japenese Yen (JPY) </option class="options">
+  <option class="options"> Swiss Franc (CHF) </option class="options">
+</select>
+    </div>
+      <div class="col-xs-12 col-sm-6" id="convert-to-section">
+        <p class="inline-block"> Convert To: </p>
+        <select>
+      <option class="options"> US Dollar (USD) </option class="options">
+      <option class="options"> Euro (EUR) </option class="options">
+      <option class="options"> Canadian Dollar (CAD) </option class="options">
+      <option class="options"> Japenese Yen (JPY) </option class="options">
+      <option class="options"> Swiss Franc (CHF) </option class="options">
+    </select>
+      </div>
+</div>
+      <button> Convert </button>
+
+
+    </section>
+  </main>
+  </div>
 </body>
+
 </html>

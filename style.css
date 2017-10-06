@@ -1,0 +1,52 @@
+html {
+  font-size: 14px;
+}
+
+.large-text {
+  font-size: 4rem;
+  margin-bottom: 5px;
+}
+
+.medium-text {
+  font-size: 2rem;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.input {
+  width: 7rem;
+}
+
+.options {
+  font-size: 20px;
+}
+
+#disclaimer {
+  font-size: 1rem;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.options {
+  font-size: 1rem;
+}
+
+#convert-section, #convert-to-section {
+  text-align: center;
+}
+
+@media only screen and (min-width:768px) {
+  #convert-section {
+    text-align: right;
+  }
+  #convert-to-section {
+    text-align: left;
+  }
+}

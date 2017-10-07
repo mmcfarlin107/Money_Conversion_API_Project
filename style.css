@@ -42,8 +42,10 @@ body{
 }
 
 #btn{
-  color: black;
-  background-color: white;
+margin: 2% auto;
+height: 3rem;
+padding: 4px 12px;
+
 }
 
 

@@ -17,7 +17,7 @@ $("button").click(function(){
       amount = 1;
     }
 
-// Below grabs the value in the first and second select element and translates it into the conversion rate from the returned JSON object
+// Below grabs the value in the first and second select element and translates it into the conversion rate from the returned JSON object.  Since the API conversion rates are based on Euros, that value is 1.
 
   var currency1 = $("#currency1").val();
   var number1 = money.rates[currency1];
@@ -34,8 +34,10 @@ $("button").click(function(){
 //Answer to the conversion for the inputs and limited it to 2 decimal points
 var convertedValue = number2/(number1 * amount);
 convertedValue = convertedValue.toFixed(2);
-
+console.log(number2 + ' / ' + number1 + ' * ' + amount);
 console.log(convertedValue);
+
+$('#answer-div').html('<p class="text-center">' + amount + " " + currency1 + " = " + convertedValue + " " + currency2 + '</p>');
   //mult amount value by option 1 value
 
   //divide multiplied number by option 2

@@ -2,6 +2,12 @@ html {
   font-size: 14px;
 }
 
+body{
+  height: 100vh!important;
+  background-color: rgb(0, 66, 0)!important;
+  color: rgb(185, 171, 141)!important;
+}
+
 .large-text {
   font-size: 4rem;
   margin-bottom: 5px;
@@ -23,10 +29,6 @@ html {
   width: 7rem;
 }
 
-.options {
-  font-size: 20px;
-}
-
 #disclaimer {
   font-size: 1rem;
   max-width: 320px;
@@ -34,13 +36,16 @@ html {
   margin-right: auto;
 }
 
-.options {
-  font-size: 1rem;
+.selectOptions{
+  color: black;
+  background-color: white;
 }
 
-#convert-section, #convert-to-section {
-  text-align: center;
+#btn{
+  color: black;
+  background-color: white;
 }
+
 
 @media only screen and (min-width:768px) {
   #convert-section {

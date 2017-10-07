@@ -5,16 +5,16 @@ html {
 body{
   height: 100vh!important;
   background-color: rgb(0, 66, 0)!important;
-  color: rgb(185, 171, 141)!important;
+  /*color: rgb(185, 171, 141)!important;*/
 }
 
 .large-text {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-bottom: 5px;
 }
 
 .medium-text {
-  font-size: 2rem;
+  font-size: 2.2rem;
   max-width: 380px;
   margin-left: auto;
   margin-right: auto;
@@ -29,12 +29,12 @@ body{
   width: 7rem;
 }
 
-#disclaimer {
-  font-size: 1rem;
+/*#disclaimer {
+  font-size: 1.5rem;
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 .selectOptions{
   color: black;

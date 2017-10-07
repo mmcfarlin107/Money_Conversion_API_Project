@@ -3,16 +3,35 @@ $(document).ready(function(){
 var money;
 var promise = function(data){
   money = data;
+  var date = data.date;
+  console.log(date);
+  //converts date from yyyy/mm/dd to dd/mm/yyyy
+  var displayedDate = changeDateFormat(date);
+  console.log(displayedDate);
+  $('#date').append(displayedDate);
   console.log(money);
 };
 
+
+function changeDateFormat(inputDate){  // expects Y-m-d
+    var splitDate = inputDate.split('-');
+    if(splitDate.count == 0){
+        return null;
+    }
+
+    var year = splitDate[0];
+    var month = splitDate[1];
+    var day = splitDate[2];
+
+    return month + '-' + day + '-' + year;
+}
 
 
 $.getJSON('http://api.fixer.io/latest', promise);
 
 $("button").click(function(){
   // Grabs the amount in the input and if it's empty the value defaults to 1
-  var amount = $('#amount').val();
+  var amount = parseFloat($('#amount').val());
     if (!amount){
       amount = 1;
     }
@@ -32,12 +51,10 @@ $("button").click(function(){
   }
 
 //Answer to the conversion for the inputs and limited it to 2 decimal points
-var convertedValue = number2/(number1 * amount);
+var convertedValue = number2/number1 * amount;
 convertedValue = convertedValue.toFixed(2);
-console.log(number2 + ' / ' + number1 + ' * ' + amount);
-console.log(convertedValue);
 
-$('#answer-div').html('<p class="text-center">' + amount + " " + currency1 + " = " + convertedValue + " " + currency2 + '</p>');
+$('#answer-div').html('<p class="text-center" style="font-size: 4rem">' + amount + ' ' + currency1 + ' = ' + convertedValue + ' ' + currency2 + '</p>');
   //mult amount value by option 1 value
 
   //divide multiplied number by option 2

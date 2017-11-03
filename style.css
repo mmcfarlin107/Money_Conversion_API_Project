@@ -47,13 +47,3 @@ height: 3rem;
 padding: 4px 12px;
 
 }
-
-
-@media only screen and (min-width:768px) {
-  #convert-section {
-    text-align: right;
-  }
-  #convert-to-section {
-    text-align: left;
-  }
-}
